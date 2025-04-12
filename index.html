@@ -2,10 +2,99 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Новости</title>
+  <title>Мой Новостной Сайт</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #20232a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #333;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .news-card {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .news-card h2 {
+      margin-top: 0;
+    }
+    .date {
+      color: gray;
+      font-size: 0.9em;
+    }
+    footer {
+      background-color: #20232a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Новости дня</h1>
-  <p>Добро пожаловать на наш новостной сайт!</p>
+
+  <header>
+    <h1>НОВОСТИ ДНЯ</h1>
+    <p>Свежие события, аналитика и репортажи</p>
+  </header>
+
+  <nav>
+    <a href="#">Главная</a>
+    <a href="#">Политика</a>
+    <a href="#">Общество</a>
+    <a href="#">Технологии</a>
+    <a href="#">Спорт</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="news-card">
+      <div class="date">12 апреля 2025</div>
+      <h2>Запущен новый новостной портал</h2>
+      <p>Мы рады представить вам наш новостной сайт, где публикуются только свежие и проверенные новости.</p>
+    </div>
+
+    <div class="news-card">
+      <div class="date">11 апреля 2025</div>
+      <h2>Научный прорыв: ИИ пишет статьи</h2>
+      <p>Учёные сообщили о разработке нейросети, способной генерировать новости быстрее журналистов. Подробнее — в материале.</p>
+    </div>
+
+    <!-- Добавляй ещё блоки .news-card здесь -->
+
+  </div>
+
+  <footer>
+    © 2025 Новости Дня | Все права защищены
+  </footer>
+
 </body>
 </html>
